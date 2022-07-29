@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Plan</title>
+    <link rel="icon" href="media/icon.jpg" >
+    <link rel="stylesheet" href="Stylesheet/mycss.css">
+    <link rel="stylesheet" href="Stylesheet/Training.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    
+    
+</head>
+<body>
+    <div class="topnav">
+        <a  href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="membershipForm.html">Membership Form</a>
+        <a class="active" href="Training.html">Training Plan</a>
+      
+    </div>
+      
+    <table>
+        
+        <tr><th>Day</th><th>Workout</th><th>Trainer</th></tr>
+        <tr><td>Monday</td><td>Chest and Biceps</td><td rowspan="3">Mr.Sonu and Mr.Samir</td></tr>
+        <tr><td>Tuesday</td><td>Back and Triceps </td><td></td></tr>
+        <tr><td>Wednesday</td><td>Shoulder and Legs</td><td></td></tr>
+        <tr><td>Thursday</td><td>Chest and Biceps</td><td rowspan="3">Mr.Sonu and Mr.Samir</td></tr>
+        <tr><td>Friday</td><td>Back and Triceps</td><td></td></tr>
+        <tr><td>Saturday</td><td>Cardio</td><td></td></tr>
+      
+    </table>
+    <div class="heading"><h2>Show Fee Structure</h2></div>
+    <div id="content">
+    <pre >
+      <h3 style="color:aliceblue">For Monthly:<span style="color: yellow; font-size: 20px;" >RS.300</span></h3>
+      <h3 style="color:aliceblue">For Quatarly: <span style="color: yellow; font-size: 20px;" >RS.1200</span></h3>
+      <h3 style="color:aliceblue">For Year: <span style="color: yellow; font-size: 20px;" >RS.3600</span></h3>
+    </pre>
+    </div>
+
+    <script>
+      $(document).ready( function() {
+        $( ".heading" ).click(function(){
+         
+          $("#content").slideToggle(1000)
+         
+    
+        });
+      } );
+      </script>
+      
+           
+  
+</body>
+</html>

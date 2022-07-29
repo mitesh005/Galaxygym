@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <link rel="icon" href="media/icon.jpg" >
+    <link rel="stylesheet" href="Stylesheet/mycss.css">
+    <link rel="stylesheet" href="Stylesheet/memberform.css">
+    
+</head>
+<body>
+    <div class="topnav">
+        <a  href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a class="active" href="membershipForm.html">Membership Form</a>
+        <a href="Training.html">Training Plan</a>
+     
+    </div>
+    <div id="myform">
+    <form action="thankyou.html" onsubmit="return validateForm()" novalidate>
+       <table>
+        <tr><td> <sup>*</sup> <label for="fname">Name:</label></td>
+            <td><input class="myinput" id="fname" name="myName" onblur="validate1()" ></td></tr>
+        <tr><td></td><td id="error1"></td></tr>
+        <tr><td> <sup>*</sup><label for="age">Age: </label></td>
+            <td> <input class="myinput" type="number"  id="age"  onblur="validate2()"  ></td></tr>
+        <tr><td></td><td id="error2"></td></tr>
+        <tr><td><sup>*</sup><label for="contact">Mobile Number: </label></td>
+            <td><input class="myinput" id="contact"  type="tel"  onblur="validate3()"></td></tr>
+        <tr><td></td><td id="error3"></td></tr>
+        <tr><td> <sup>*</sup><label for="mail">Email Id: </label></td>
+            <td><input class="myinput" type="email"  id="mail"   onblur="validate4()"></td></tr>
+        <tr><td></td><td id="error4"></td></tr>
+        <tr><td><sup>*</sup> <label for="gender">Gender:</label></td>
+            <td><input type="radio" id="male" value="male" name="gender" onchange="validate5()">Male <input type="radio" value="female" id="female" name="gender" onchange="validate5()">Female</td>
+            <tr><td></td><td id="error5"></td></tr> 
+        <tr><td><sup>*</sup> <label for="Cardio">Want Cardio:</label></td>
+            <td><input type="radio" value="yes" id="yes" name="Cardio" onchange="validate6()">Yes <input type="radio" id="no" value="no" name="Cardio" onchange="validate6()">No</td>
+            <tr><td></td><td id="error6"></td></tr>
+            <tr><td></td><td><button type="submit" class="button-9">Submit</button></td></tr>
+       </table>
+    </form>
+    </div>
+    <script src="JS/MemberForm.js"></script>
+</body>
+</html>
